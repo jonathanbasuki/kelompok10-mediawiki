@@ -10,8 +10,8 @@ services:
       - 8080:80
     volumes:
       - ./LocalSettings.php:/var/www/html/LocalSettings.php
-      - ./images/Logo_UPNVJ.png:/var/www/html/resources/assets/Logo_UPNVJ.png:rw
-      - ./images/Icon_UPNVJ.png:/var/www/html/resources/assets/Icon_UPNVJ.png:rw
+      - ./assets/logo/Logo_UPNVJ.png:/var/www/html/resources/assets/Logo_UPNVJ.png:rw
+      - ./assets/logo/Icon_UPNVJ.png:/var/www/html/resources/assets/Icon_UPNVJ.png:rw
   # After initial setup, download LocalSettings.php to the same directory as
   # this yaml and uncomment the following line and use compose to restart
   # the mediawiki service
